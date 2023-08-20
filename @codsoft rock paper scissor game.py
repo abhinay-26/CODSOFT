@@ -43,12 +43,13 @@ scissors_button = tk.Button(root, text="Scissors", command=on_scissors_click)
 rock_button.pack(pady=50)
 paper_button.pack(pady=50)
 scissors_button.pack(pady=50)
+
+
+# Start the GUI 
+root.mainloop() 
 play_again=input("paly again? (y/n): ")
 if not play_again =="y":
     running=False
-
-# Start the GUI 
-root.mainloop()
 
 print("Thanks for playing")
 
